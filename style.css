@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+body {
+  font-family: "Reddit Sans", sans-serif;
+  line-height: 1.5;
+  background-color: #2b2929;
+  color: #fff;
+}
+img,
+video {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+a {
+  color: inherit;
+}
+.video-container {
+  position: relative;
+  margin: 0 auto;
+}
+
+.video-container button {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  max-width: 4rem;
+}
+.titles {
+  position: absolute;
+  top: 30%;
+  right: 3rem;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  text-align: right;
+}
+.titles h1 {
+  font-size: 6rem;
+  margin-bottom: 5rem;
+}
+section {
+  padding: 6rem;
+  background: url(./assets/pottery.jpg) no-repeat center bottom / cover;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  margin-top: -0.5rem;
+}
+section h2 {
+  text-align: center;
+  font-size: 1.75rem;
+  text-transform: uppercase;
+}
+.description-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 0;
+  font-size: 1.25rem;
+}
+.description-form > * {
+  flex-basis: 33%;
+}
+.description-form label {
+  display: block;
+  font-size: 1rem;
+  margin-top: 0.75rem;
+}
+.description-form label::after {
+  content: "*";
+}
+.description-form input,
+.description-form textarea {
+  border: 0;
+  padding: 0.75rem 1rem;
+  width: 100%;
+}
+.description-form button {
+  padding: 0.5rem 3rem;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  display: block;
+  margin: 1rem auto;
+  border: 0;
+  background-color: #2b2929;
+  color: #fff;
+  cursor: pointer;
+}
+footer {
+  background-color: #2b2929;
+  padding: 3rem 6rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+footer a {
+  display: block;
+  text-decoration: none;
+}
+.footer-logo {
+  max-width: 10rem;
+}
+
+@media (width <= 750px) {
+  .video-container button {
+    display: none;
+  }
+  .titles {
+    position: relative;
+    text-align: center;
+    right: auto;
+    top: auto;
+  }
+  .titles h1 {
+    margin-bottom: 2rem;
+  }
+  .titles h2 {
+    padding-bottom: 1rem;
+  }
+  section {
+    padding: 5rem 1rem;
+  }
+  .description-form {
+    gap: 2rem;
+    justify-content: center;
+  }
+  .description-form > * {
+    flex-basis: 100%;
+  }
+  footer {
+    justify-content: center;
+    text-align: center;
+  }
+}
